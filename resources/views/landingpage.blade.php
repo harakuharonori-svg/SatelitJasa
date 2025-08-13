@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav style="width: 100%; display: relative;" class="navbar bg-body-tertiary position-fixed navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24">
+            </a>
+            <div>
+
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-end w-100">
+                    <li class="nav-item">
+                        <a href="/profil/"><img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="pfp" width="30" height="24"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Masuk
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Register</a></li>
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="width: 100%; height: 100dvh; display: relative;" class="bg-dark">
+        <div class="position-absolute top-50 start-50 translate-middle text-light">
+            <h1 class="mt-5">KAMI SIAP MELAYANI PERMINTAANMU<br />KAPANPUN, DIMANAPUN.</h1>
+
+            <p>Ingin cari jasa-jasa yang tersedia?</p>
+
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-lg">
+                <button type="button" class="btn btn-light fw-semibold">Cari ></button>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center;" class="mt-5">
+        <a href=""><button type="button" class="btn btn-outline-secondary">Secondary</button></a>
+        <a href=""><button type="button" class="btn btn-outline-secondary">Secondary</button></a>
+        <a href=""><button type="button" class="btn btn-outline-secondary">Secondary</button></a>
+        <a href=""><button type="button" class="btn btn-outline-secondary">Secondary</button></a>
+        <a href=""><button type="button" class="btn btn-outline-secondary">Secondary</button></a>
+        <a href=""><button type="button" class="btn btn-outline-secondary">Secondary</button></a>
+        <a href=""><button type="button" class="btn btn-outline-secondary">Secondary</button></a>
+        <a href=""><button type="button" class="btn btn-outline-secondary">Secondary</button></a>
+        <a href=""><button type="button" class="btn btn-outline-secondary">Secondary</button></a>
+        <a href=""><button type="button" class="btn btn-outline-secondary">Secondary</button></a>
+
+        <h2 class="mt-5">Jasa-jasa kami</h2>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
