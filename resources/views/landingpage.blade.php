@@ -8,7 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
-
+<style>
+    #deskin:hover {
+        text-decoration: underline;
+    }
+</style>
 <body>
     <nav style="width: 100%; display: relative;" class="navbar bg-body-tertiary position-fixed navbar-expand-lg">
         <div class="container">
@@ -26,7 +30,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav justify-content-end w-100">
                     <li class="nav-item">
-                        <a href="/profil/"><img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="pfp" width="30" height="24"></a>
+                        <a href="/profil/"><img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="pfp" width="30"
+                                height="24"></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
@@ -71,7 +76,110 @@
         <a href=""><button type="button" class="btn btn-outline-secondary">Secondary</button></a>
         <a href=""><button type="button" class="btn btn-outline-secondary">Secondary</button></a>
 
-        <h2 class="mt-5">Jasa-jasa kami</h2>
+        <h2 class="mt-5">Layanan yang tersedia</h2>
+
+        <div style="justify-text: center;" class="row mt-4">
+            <a href="" style="text-decoration: none; width: max-content;">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/logo-picture.jpg" class="card-img-top alt=" ...">
+                    <div class="card-body">
+                        <h5 class="card-title">Desain Logo</h5>
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk bisnis anda
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="" style="text-decoration: none; width: max-content;">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/logo-picture.jpg" class="card-img-top alt=" ...">
+                    <div class="card-body">
+                        <h5 class="card-title">Desain Logo</h5>
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk bisnis anda
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="" style="text-decoration: none; width: max-content;">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/logo-picture.jpg" class="card-img-top alt=" ...">
+                    <div class="card-body">
+                        <h5 class="card-title">Desain Logo</h5>
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk bisnis anda
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="" style="text-decoration: none; width: max-content;">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/logo-picture.jpg" class="card-img-top alt=" ...">
+                    <div class="card-body">
+                        <h5 class="card-title">Desain Logo</h5>
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk bisnis anda
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="" style="text-decoration: none; width: max-content;">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/logo-picture.jpg" class="card-img-top alt=" ...">
+                    <div class="card-body">
+                        <h5 class="card-title">Desain Logo</h5>
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk bisnis anda
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="" style="text-decoration: none; width: max-content;">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/logo-picture.jpg" class="card-img-top alt=" ...">
+                    <div class="card-body">
+                        <h5 class="card-title">Desain Logo</h5>
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk bisnis anda
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="" style="text-decoration: none; width: max-content;">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/logo-picture.jpg" class="card-img-top alt=" ...">
+                    <div class="card-body">
+                        <h5 class="card-title">Desain Logo</h5>
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk bisnis anda
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="" style="text-decoration: none; width: max-content;">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/logo-picture.jpg" class="card-img-top alt=" ...">
+                    <div class="card-body">
+                        <h5 class="card-title">Desain Logo</h5>
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk bisnis anda
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="" style="text-decoration: none; width: max-content;">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/logo-picture.jpg" class="card-img-top alt=" ...">
+                    <div class="card-body">
+                        <h5 class="card-title">Desain Logo</h5>
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk bisnis anda
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="" style="text-decoration: none; width: max-content;">
+                <div class="card" style="width: 18rem;">
+                    <img src="/images/logo-picture.jpg" class="card-img-top alt=" ...">
+                    <div class="card-body">
+                        <h5 class="card-title">Desain Logo</h5>
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk bisnis anda
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
