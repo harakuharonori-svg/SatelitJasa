@@ -13,7 +13,7 @@
     <nav style="width: 100%; display: relative;" class="navbar bg-body-tertiary position-fixed navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24">
+                <img src="/images/logo_black.png" alt="Logo" width="40" height="40">
             </a>
             <div>
 
@@ -37,8 +37,8 @@
                             Masuk
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Register</a></li>
-                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" href="/auth/register">Register</a></li>
+                            <li><a class="dropdown-item" href="/auth/login">Login</a></li>
                         </ul>
                     </li>
                 </ul>
