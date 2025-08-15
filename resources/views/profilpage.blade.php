@@ -10,8 +10,8 @@
 <body>
     <nav style="width: 100%; display: relative;" class="navbar bg-body-tertiary position-fixed navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24">
+            <a class="navbar-brand" href="/">
+                <img src="/images/logo_black.png" alt="Logo" width="40" height="40">
             </a>
             <div>
 

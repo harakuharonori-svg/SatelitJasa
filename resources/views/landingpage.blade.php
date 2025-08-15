@@ -12,11 +12,20 @@
     #deskin:hover {
         text-decoration: underline;
     }
+
+    #gambar {
+        transition: transform 0.3s ease;
+    }
+
+    #gambar:hover {
+        transform: scale(1.2);
+    }
 </style>
+
 <body>
     <nav style="width: 100%; display: relative;" class="navbar bg-body-tertiary position-fixed navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
                 <img src="/images/logo_black.png" alt="Logo" width="40" height="40">
             </a>
             <div>
@@ -79,102 +88,158 @@
         <h2 class="mt-5">Layanan yang tersedia</h2>
 
         <div style="justify-text: center;" class="row mt-4">
-            <a href="" style="text-decoration: none; width: max-content;">
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="/images/logo-picture.jpg" class="card-img-top alt=" ...">
+                    <div class="overflow-hidden">
+                        <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Desain Logo</h5>
-                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk bisnis anda
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
+                            bisnis anda
                         </p>
                     </div>
                 </div>
             </a>
-            <a href="" style="text-decoration: none; width: max-content;">
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="/images/logo-picture.jpg" class="card-img-top alt=" ...">
+                    <div class="overflow-hidden">
+                        <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Desain Logo</h5>
-                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk bisnis anda
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
+                            bisnis anda
                         </p>
                     </div>
                 </div>
             </a>
-            <a href="" style="text-decoration: none; width: max-content;">
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="/images/logo-picture.jpg" class="card-img-top alt=" ...">
+                    <div class="overflow-hidden">
+                        <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Desain Logo</h5>
-                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk bisnis anda
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
+                            bisnis anda
                         </p>
                     </div>
                 </div>
             </a>
-            <a href="" style="text-decoration: none; width: max-content;">
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="/images/logo-picture.jpg" class="card-img-top alt=" ...">
+                    <div class="overflow-hidden">
+                        <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Desain Logo</h5>
-                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk bisnis anda
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
+                            bisnis anda
                         </p>
                     </div>
                 </div>
             </a>
-            <a href="" style="text-decoration: none; width: max-content;">
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="/images/logo-picture.jpg" class="card-img-top alt=" ...">
+                    <div class="overflow-hidden">
+                        <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Desain Logo</h5>
-                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk bisnis anda
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
+                            bisnis anda
                         </p>
                     </div>
                 </div>
             </a>
-            <a href="" style="text-decoration: none; width: max-content;">
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="/images/logo-picture.jpg" class="card-img-top alt=" ...">
+                    <div class="overflow-hidden">
+                        <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Desain Logo</h5>
-                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk bisnis anda
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
+                            bisnis anda
                         </p>
                     </div>
                 </div>
             </a>
-            <a href="" style="text-decoration: none; width: max-content;">
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="/images/logo-picture.jpg" class="card-img-top alt=" ...">
+                    <div class="overflow-hidden">
+                        <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Desain Logo</h5>
-                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk bisnis anda
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
+                            bisnis anda
                         </p>
                     </div>
                 </div>
             </a>
-            <a href="" style="text-decoration: none; width: max-content;">
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="/images/logo-picture.jpg" class="card-img-top alt=" ...">
+                    <div class="overflow-hidden">
+                        <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Desain Logo</h5>
-                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk bisnis anda
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
+                            bisnis anda
                         </p>
                     </div>
                 </div>
             </a>
-            <a href="" style="text-decoration: none; width: max-content;">
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="/images/logo-picture.jpg" class="card-img-top alt=" ...">
+                    <div class="overflow-hidden">
+                        <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Desain Logo</h5>
-                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk bisnis anda
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
+                            bisnis anda
                         </p>
                     </div>
                 </div>
             </a>
-            <a href="" style="text-decoration: none; width: max-content;">
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="/images/logo-picture.jpg" class="card-img-top alt=" ...">
+                    <div class="overflow-hidden">
+                        <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Desain Logo</h5>
-                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk bisnis anda
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
+                            bisnis anda
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="overflow-hidden">
+                        <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Desain Logo</h5>
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
+                            bisnis anda
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="overflow-hidden">
+                        <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Desain Logo</h5>
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
+                            bisnis anda
                         </p>
                     </div>
                 </div>
