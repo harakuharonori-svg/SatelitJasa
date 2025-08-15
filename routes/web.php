@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ChatController;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\ProfilPageController;
 use App\Http\Controllers\DetailJasaController;
@@ -16,3 +17,4 @@ Route::get('/auth/register', action: [AuthController::class,"register"]);
 
 Route::get('/detail/', [DetailJasaController::class, "index"]);
 
+Route::get('/chat/', [ChatController::class,"chat"]);
