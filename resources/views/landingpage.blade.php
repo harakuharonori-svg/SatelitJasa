@@ -23,7 +23,8 @@
 </style>
 
 <body>
-    <nav style="width: 100%; display: relative;" class="navbar bg-body-tertiary position-fixed navbar-expand-lg">
+    <nav style="width: 100%; display: fix; z-index: 9999;"
+        class="navbar bg-body-tertiary position-fixed navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="/">
                 <img src="/images/logo_black.png" alt="Logo" width="40" height="40">
@@ -39,8 +40,12 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav justify-content-end w-100">
                     <li class="nav-item">
-                        <a href="/profil/"><img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="pfp" width="30"
-                                height="24"></a>
+                        <a href="/profil/">
+                            <div style="top: 50%; left: 25%;">
+                                <img src="/images/pfp.jpg" alt="pfp" style="width: 40px; height: 40px;"
+                                    class="rounded-circle border border-light border-5">
+                            </div>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
@@ -59,7 +64,8 @@
             </div>
         </div>
     </nav>
-    <div style="width: 100%; height: 100dvh; display: relative;" class="bg-dark">
+    <div style="width: 100%; height: 100dvh; display: relative; background-image: url(/images/satelite-background.jpg); background-repeat: no-repeat; background-size: cover;"
+        class="bg-dark">
         <div class="position-absolute top-50 start-50 translate-middle text-light">
             <h1 class="mt-5">KAMI SIAP MELAYANI PERMINTAANMU<br />KAPANPUN, DIMANAPUN.</h1>
 
@@ -87,8 +93,50 @@
 
         <h2 class="mt-5">Layanan yang tersedia</h2>
 
-        <div style="justify-text: center;" class="row mt-4">
-            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
+        <div style="display: flex; flex-wrap: wrap; justify-content: center;" class="mt-4">
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3 mx-2">
+                <div class="card" style="width: 18rem;">
+                    <div class="overflow-hidden">
+                        <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Desain Logo</h5>
+                        <span class="badge text-bg-secondary">Baru</span>
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
+                            bisnis anda
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3 mx-2">
+                <div class="card" style="width: 18rem;">
+                    <div class="overflow-hidden">
+                        <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Desain Logo</h5>
+                        <span class="badge text-bg-secondary">Baru</span>
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
+                            bisnis anda
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3 mx-2">
+                <div class="card" style="width: 18rem;">
+                    <div class="overflow-hidden">
+                        <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Desain Logo</h5>
+                        <span class="badge text-bg-secondary">Baru</span>
+                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
+                            bisnis anda
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3 mx-2">
                 <div class="card" style="width: 18rem;">
                     <div class="overflow-hidden">
                         <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
@@ -101,7 +149,7 @@
                     </div>
                 </div>
             </a>
-            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3 mx-2">
                 <div class="card" style="width: 18rem;">
                     <div class="overflow-hidden">
                         <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
@@ -114,7 +162,7 @@
                     </div>
                 </div>
             </a>
-            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3 mx-2">
                 <div class="card" style="width: 18rem;">
                     <div class="overflow-hidden">
                         <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
@@ -127,7 +175,7 @@
                     </div>
                 </div>
             </a>
-            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3 mx-2">
                 <div class="card" style="width: 18rem;">
                     <div class="overflow-hidden">
                         <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
@@ -140,7 +188,7 @@
                     </div>
                 </div>
             </a>
-            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3 mx-2">
                 <div class="card" style="width: 18rem;">
                     <div class="overflow-hidden">
                         <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
@@ -153,7 +201,7 @@
                     </div>
                 </div>
             </a>
-            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3 mx-2">
                 <div class="card" style="width: 18rem;">
                     <div class="overflow-hidden">
                         <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
@@ -166,7 +214,7 @@
                     </div>
                 </div>
             </a>
-            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3 mx-2">
                 <div class="card" style="width: 18rem;">
                     <div class="overflow-hidden">
                         <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
@@ -179,7 +227,7 @@
                     </div>
                 </div>
             </a>
-            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
+            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3 mx-2">
                 <div class="card" style="width: 18rem;">
                     <div class="overflow-hidden">
                         <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
@@ -192,58 +240,20 @@
                     </div>
                 </div>
             </a>
-            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
-                <div class="card" style="width: 18rem;">
-                    <div class="overflow-hidden">
-                        <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Desain Logo</h5>
-                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
-                            bisnis anda
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
-                <div class="card" style="width: 18rem;">
-                    <div class="overflow-hidden">
-                        <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Desain Logo</h5>
-                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
-                            bisnis anda
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
-                <div class="card" style="width: 18rem;">
-                    <div class="overflow-hidden">
-                        <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Desain Logo</h5>
-                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
-                            bisnis anda
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3">
-                <div class="card" style="width: 18rem;">
-                    <div class="overflow-hidden">
-                        <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Desain Logo</h5>
-                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
-                            bisnis anda
-                        </p>
-                    </div>
-                </div>
-            </a>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <nav aria-label="...">
+                <ul class="pagination">
+                    <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                    <li class="page-item active">
+                        <a class="page-link" href="#" aria-current="page">1</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
 

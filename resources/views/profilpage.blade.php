@@ -8,7 +8,7 @@
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
-    <nav style="width: 100%; display: relative;" class="navbar bg-body-tertiary position-fixed navbar-expand-lg">
+    <nav style="width: 100%; display: fix; z-index: 9999;" class="navbar bg-body-tertiary position-fixed navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="/">
                 <img src="/images/logo_black.png" alt="Logo" width="40" height="40">
@@ -32,8 +32,8 @@
                             Masuk
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Register</a></li>
-                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" href="/auth/register">Register</a></li>
+                            <li><a class="dropdown-item" href="/auth/login">Login</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -46,7 +46,7 @@
 
         </div>
         <div style="transform: translate(50%, 0%); top: 50%; left: 25%;" class="position-absolute translate-middle">
-            <img src="/images/kursi.jpg" alt="pfp" style="width: 120px; height: 120px;" class="rounded-circle border border-light border-5">
+            <img src="/images/pfp.jpg" alt="pfp" style="width: 120px; height: 120px;" class="rounded-circle border border-light border-5">
         </div>
     </div>
 

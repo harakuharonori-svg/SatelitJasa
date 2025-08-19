@@ -23,7 +23,7 @@
 </style>
 
 <body>
-    <nav style="width: 100%; display: relative;" class="navbar bg-body-tertiary position-fixed navbar-expand-lg">
+    <nav style="width: 100%; display: relative; z-index: 9999;" class="navbar bg-body-tertiary position-fixed navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="/">
                 <img src="/images/logo_black.png" alt="Logo" width="40" height="40">
@@ -39,8 +39,12 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav justify-content-end w-100">
                     <li class="nav-item">
-                        <a href="/profil/"><img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="pfp" width="30"
-                                height="24"></a>
+                        <a href="/profil/">
+                            <div style="top: 50%; left: 25%;">
+                                <img src="/images/pfp.jpg" alt="pfp" style="width: 40px; height: 40px;"
+                                    class="rounded-circle border border-light border-5">
+                            </div>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
@@ -60,9 +64,48 @@
         </div>
     </nav>
 
-    <div class="overflow-hidden" style="width: 100%; height: 75dvh;">
-        <img src="/images/logo-picture.jpg" alt="picture"
-            style="max-width: 50%; height: auto; text-align: center; margin: 25%; margin-top: 7%;" id="gambar" />
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <div class="overflow-hidden" style="width: 100%; height: 75dvh;">
+                    <img src="/images/logo-picture.jpg" alt="picture"
+                        style="max-width: 50%; height: auto; text-align: center; margin: 25%; margin-top: 7%;"
+                        id="gambar" />
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <div class="overflow-hidden" style="width: 100%; height: 75dvh;">
+                    <img src="/images/logo-picture.jpg" alt="picture"
+                        style="max-width: 50%; height: auto; text-align: center; margin: 25%; margin-top: 7%;"
+                        id="gambar" />
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="overflow-hidden" style="width: 100%; height: 75dvh;">
+                    <img src="/images/logo-picture.jpg" alt="picture"
+                        style="max-width: 50%; height: auto; text-align: center; margin: 25%; margin-top: 7%;"
+                        id="gambar" />
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
     <div class="mx-5">
@@ -77,9 +120,9 @@
             <button class="btn btn-success" type="button">Lanjutkan</button>
         </div>
 
-        <div class="d-grid gap-2 mt-3">
+        <a href="/chat/" style="text-decoration: none;" class="d-grid gap-2 mt-3">
             <button class="btn btn-outline-secondary" type="button">Pesan</button>
-        </div>
+        </a>
 
         <h6 class="mt-5">Reviews:</h6>
 

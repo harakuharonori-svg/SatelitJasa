@@ -40,14 +40,13 @@
             border-right: 10px solid transparent;
             transform: translateY(-50%);
         }
-        
     </style>
 </head>
 
 <body>
     <div class="d-flex justify-content-center align-items-center" style="width: 100%;height:100dvh">
-        <form style="width: 40%; box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); background-color: white"
-            action="" class="border rounded-5" action="">
+        <form style="width: 40%; box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); background-color: white" action=""
+            class="border rounded-5" action="">
             <div class="pb-1 rounded-5" style="background-color: rgb(45, 122, 255)">
                 <a href="/" class="btn mb-2"><svg xmlns="http://www.w3.org/2000/svg" fill="#ffffffff"
                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -75,7 +74,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>
