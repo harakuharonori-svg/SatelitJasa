@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ChatController;
+use App\Http\Controllers\inbox;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\ProfilPageController;
 use App\Http\Controllers\DetailJasaController;
@@ -24,3 +25,7 @@ Route::get("/detail/pembayaran", [PembayaranController::class, "index"]);
 Route::get('/chat/', [ChatController::class,"chat"]);
 
 Route::get('/lamanjasa', [LamanJasaController::class, "index"]);
+
+Route::get('/inbox',[inbox::class,"index"]);
+
+Route::get('/mail/',[inbox::class,"mail"]);
