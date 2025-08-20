@@ -23,7 +23,8 @@
 </style>
 
 <body>
-    <nav style="width: 100%; display: relative; z-index: 9999;" class="navbar bg-body-tertiary position-fixed navbar-expand-lg">
+    <nav style="width: 100%; display: relative; z-index: 9999;"
+        class="navbar bg-body-tertiary position-fixed navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="/">
                 <img src="/images/logo_black.png" alt="Logo" width="40" height="40">
@@ -116,9 +117,9 @@
             <h5>Badru</h5>
         </div>
         <hr />
-        <div class="d-grid gap-2">
+        <a href="/detail/pembayaran/" class="d-grid gap-2">
             <button class="btn btn-success" type="button">Lanjutkan</button>
-        </div>
+        </a>
 
         <a href="/chat/" style="text-decoration: none;" class="d-grid gap-2 mt-3">
             <button class="btn btn-outline-secondary" type="button">Pesan</button>
@@ -132,46 +133,22 @@
             ab similique explicabo!</p>
 
         <h6 class="mt-5">Rekomendasi Untukmu</h6>
-        <div class="row">
-            <a href="/detail/" style="text-decoration: none; width: max-content;">
-                <div class="card" style="width: 10rem;">
-                    <div class="overflow-hidden">
-                        <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
+        <div class="d-flex flex-row w-full flex-nowrap overflow-x-auto">
+            @for ($i = 0; $i < 10; $i++)
+                <a href="/detail/" style="text-decoration: none; width: max-content;" class="mb-3 mx-2">
+                    <div class="card" style="width: 10rem;">
+                        <div class="overflow-hidden">
+                            <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Desain Logo</h5>
+                            <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
+                                bisnis anda
+                            </p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Desain Logo</h5>
-                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
-                            bisnis anda
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <a href="/detail/" style="text-decoration: none; width: max-content;">
-                <div class="card" style="width: 10rem;">
-                    <div class="overflow-hidden">
-                        <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Desain Logo</h5>
-                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
-                            bisnis anda
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <a href="/detail/" style="text-decoration: none; width: max-content;">
-                <div class="card" style="width: 10rem;">
-                    <div class="overflow-hidden">
-                        <img src="/images/logo-picture.jpg" class="card-img-top" id="gambar" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Desain Logo</h5>
-                        <p class="card-text" id="deskin">Saya dapat membuatkan anda logo yang simpel dan minimalis untuk
-                            bisnis anda
-                        </p>
-                    </div>
-                </div>
-            </a>
+                </a>
+            @endfor
         </div>
     </div>
 

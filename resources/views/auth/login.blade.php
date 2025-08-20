@@ -11,7 +11,7 @@
 </head>
 
 <body
-    style="background-image: url('/image/backgroundsaya.jpg'); background-repeat: no-repeat;width:100%;height:100%;background-size: cover">
+    style="background-image: url('/images/backgroundsaya.jpg'); background-repeat: no-repeat;width:100%;height:100%;background-size: cover">
     <div class="d-flex justify-content-center align-items-center" style="width: 100%;height:100dvh">
         <form style="box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); background-color: white" action="" class="border p-5 rounded-4">
             <a href="/" class="btn mb-2"><svg xmlns="http://www.w3.org/2000/svg" fill="#ffffffff"
