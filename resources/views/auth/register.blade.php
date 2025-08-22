@@ -94,7 +94,7 @@
         right: -50%;
         width: 200%;
         height: 200%;
-        background: radial-gradient(circle, rgba(0,0,0,0.02) 0%, transparent 70%);
+        background: radial-gradient(circle, rgba(0, 0, 0, 0.02) 0%, transparent 70%);
         pointer-events: none;
     }
 
@@ -430,8 +430,13 @@
     }
 
     @keyframes spin {
-        0% { transform: translateY(-50%) rotate(0deg); }
-        100% { transform: translateY(-50%) rotate(360deg); }
+        0% {
+            transform: translateY(-50%) rotate(0deg);
+        }
+
+        100% {
+            transform: translateY(-50%) rotate(360deg);
+        }
     }
 
     /* Validation messages */
@@ -484,21 +489,22 @@
             </div>
 
             <!-- Register Form -->
-            <form id="registerForm" action="" method="POST">
+            <form id="registerForm" action="{{ route("register.store") }}" method="POST">
+                @csrf
                 <div class="form-group">
                     <label for="username" class="form-label">
                         <i class="fas fa-user"></i>
                         Nama Lengkap
                     </label>
-                    <input 
-                        type="text" 
-                        class="form-control-modern" 
-                        id="username" 
-                        name="username"
-                        placeholder="Masukkan nama lengkap"
-                        required
-                    >
-                    <div class="form-feedback" id="username-feedback"></div>
+                    <input type="text" class="form-control-modern" id="username" name="nama"
+                        placeholder="Masukkan nama lengkap" value="{{ old("nama") }}">
+                    @error("nama")
+                        <div style="color: red;">
+                            <div style="color: red;">
+                                {{$message}}
+                            </div>
+                        </div>
+                    @enderror
                 </div>
 
                 <div class="form-group">
@@ -506,48 +512,27 @@
                         <i class="fas fa-envelope"></i>
                         Alamat Email
                     </label>
-                    <input 
-                        type="email" 
-                        class="form-control-modern" 
-                        id="email" 
-                        name="email"
-                        placeholder="nama@example.com"
-                        required
-                    >
-                    <div class="form-feedback" id="email-feedback"></div>
+                    <input type="email" class="form-control-modern" id="email" name="email"
+                        placeholder="nama@example.com" value="{{ old("email") }}">
+                    @error("email")
+                        <div style="color: red;">
+                            {{$message}}
+                        </div>
+                    @enderror
                 </div>
 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="phone" class="form-label">
-                            <i class="fas fa-phone"></i>
-                            No. Telepon
-                        </label>
-                        <input 
-                            type="tel" 
-                            class="form-control-modern" 
-                            id="phone" 
-                            name="phone"
-                            placeholder="+62 812-3456-7890"
-                            required
-                        >
-                        <div class="form-feedback" id="phone-feedback"></div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="birthdate" class="form-label">
-                            <i class="fas fa-calendar"></i>
-                            Tanggal Lahir
-                        </label>
-                        <input 
-                            type="date" 
-                            class="form-control-modern" 
-                            id="birthdate" 
-                            name="birthdate"
-                            required
-                        >
-                        <div class="form-feedback" id="birthdate-feedback"></div>
-                    </div>
+                <div class="form-group">
+                    <label for="phone" class="form-label">
+                        <i class="fas fa-phone"></i>
+                        No. Telepon
+                    </label>
+                    <input type="tel" class="form-control-modern" id="phone" name="telp" placeholder="081234567890"
+                        value="{{ old("telp") }}">
+                    @error("telp")
+                        <div style="color: red;">
+                            {{$message}}
+                        </div>
+                    @enderror
                 </div>
 
                 <div class="form-group">
@@ -556,22 +541,21 @@
                         Kata Sandi
                     </label>
                     <div class="password-input-group">
-                        <input 
-                            type="password" 
-                            class="form-control-modern" 
-                            id="password" 
-                            name="password"
-                            placeholder="Minimal 8 karakter"
-                            required
-                        >
-                        <button type="button" class="password-toggle" onclick="togglePassword('password', 'passwordIcon')">
+                        <input type="password" class="form-control-modern" id="password" name="password"
+                            placeholder="Minimal 8 karakter" value="{{ old("password") }}">
+                        <button type="button" class="password-toggle"
+                            onclick="togglePassword('password', 'passwordIcon')">
                             <i class="fas fa-eye" id="passwordIcon"></i>
                         </button>
                     </div>
                     <div class="password-strength" id="passwordStrength">
                         <div class="password-strength-bar"></div>
                     </div>
-                    <div class="form-feedback" id="password-feedback"></div>
+                    @error("password")
+                        <div style="color: red;">
+                            {{$message}}
+                        </div>
+                    @enderror
                 </div>
 
                 <div class="form-group">
@@ -580,25 +564,25 @@
                         Konfirmasi Kata Sandi
                     </label>
                     <div class="password-input-group">
-                        <input 
-                            type="password" 
-                            class="form-control-modern" 
-                            id="password_confirmation" 
-                            name="password_confirmation"
-                            placeholder="Ulangi kata sandi"
-                            required
-                        >
-                        <button type="button" class="password-toggle" onclick="togglePassword('password_confirmation', 'passwordConfirmIcon')">
+                        <input type="password" class="form-control-modern" id="password_confirmation"
+                            name="confirmpassword" placeholder="Ulangi kata sandi">
+                        <button type="button" class="password-toggle"
+                            onclick="togglePassword('password_confirmation', 'passwordConfirmIcon')">
                             <i class="fas fa-eye" id="passwordConfirmIcon"></i>
                         </button>
                     </div>
-                    <div class="form-feedback" id="password-confirm-feedback"></div>
+                    @error("confirmpassword")
+                        <div style="color: red;">
+                            {{$message}}
+                        </div>
+                    @enderror
                 </div>
 
                 <div class="terms-check">
-                    <input type="checkbox" id="terms" name="terms" required>
+                    <input type="checkbox" id="terms" name="terms">
                     <label for="terms">
-                        Saya setuju dengan <a href="/terms">Syarat & Ketentuan</a> dan <a href="/privacy">Kebijakan Privasi</a>
+                        Saya setuju dengan <a href="/terms">Syarat & Ketentuan</a> dan <a href="/privacy">Kebijakan
+                            Privasi</a>
                     </label>
                 </div>
 
@@ -608,7 +592,7 @@
                 </button>
 
                 <div class="login-link">
-                    <p>Sudah punya akun? 
+                    <p>Sudah punya akun?
                         <a href="/auth/login">
                             <i class="fas fa-sign-in-alt me-1"></i>
                             Masuk di sini
@@ -619,218 +603,11 @@
         </div>
     </div>
 
-    <!-- Footer - Consistent with other pages -->
-    <footer class="bg-black text-white py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <h5 class="mb-3">SatelitJasa</h5>
-                    <p class="text-white-50">Platform terpercaya untuk menemukan dan menyediakan jasa profesional dengan kualitas terbaik.</p>
-                </div>
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h6 class="mb-3">Layanan</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white-50 text-decoration-none">Desain</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Pemrograman</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Pemasaran</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Konsultasi</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h6 class="mb-3">Perusahaan</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white-50 text-decoration-none">Tentang Kami</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Karir</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Blog</a></li>
-                        <li><a href="#" class="text-white-50 text-decoration-none">Kontak</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <h6 class="mb-3">Kontak</h6>
-                    <p class="text-white-50 mb-2">
-                        <i class="fas fa-envelope me-2"></i>
-                        info@satelitjasa.com
-                    </p>
-                    <p class="text-white-50 mb-2">
-                        <i class="fas fa-phone me-2"></i>
-                        +62 812-3456-7890
-                    </p>
-                    <div class="mt-3">
-                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            <hr class="my-4 border-white-50">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p class="text-white-50 mb-0">&copy; 2025 SatelitJasa. Semua hak dilindungi.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <x-footer/>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
-
-    <script>
-        // Toggle password visibility
-        function togglePassword(inputId, iconId) {
-            const passwordInput = document.getElementById(inputId);
-            const passwordIcon = document.getElementById(iconId);
-            
-            if (passwordInput.type === 'password') {
-                passwordInput.type = 'text';
-                passwordIcon.className = 'fas fa-eye-slash';
-            } else {
-                passwordInput.type = 'password';
-                passwordIcon.className = 'fas fa-eye';
-            }
-        }
-
-        // Password strength checker
-        function checkPasswordStrength(password) {
-            const strengthElement = document.getElementById('passwordStrength');
-            const feedback = document.getElementById('password-feedback');
-            
-            let score = 0;
-            let messages = [];
-
-            if (password.length >= 8) score++;
-            else messages.push('Minimal 8 karakter');
-
-            if (/[a-z]/.test(password)) score++;
-            else messages.push('Huruf kecil');
-
-            if (/[A-Z]/.test(password)) score++;
-            else messages.push('Huruf besar');
-
-            if (/[0-9]/.test(password)) score++;
-            else messages.push('Angka');
-
-            if (/[^A-Za-z0-9]/.test(password)) score++;
-            else messages.push('Simbol');
-
-            strengthElement.className = 'password-strength';
-            if (score <= 2) {
-                strengthElement.classList.add('weak');
-                feedback.textContent = 'Password lemah: ' + messages.join(', ');
-                feedback.className = 'form-feedback invalid show';
-            } else if (score <= 4) {
-                strengthElement.classList.add('medium');
-                feedback.textContent = 'Password sedang';
-                feedback.className = 'form-feedback show';
-                feedback.style.color = '#ffc107';
-            } else {
-                strengthElement.classList.add('strong');
-                feedback.textContent = 'Password kuat';
-                feedback.className = 'form-feedback valid show';
-            }
-        }
-
-        // Form validation
-        function validateForm() {
-            const inputs = document.querySelectorAll('.form-control-modern');
-            let isValid = true;
-
-            inputs.forEach(input => {
-                const feedback = document.getElementById(input.id + '-feedback');
-                
-                if (input.value.trim() === '') {
-                    input.classList.add('invalid');
-                    input.classList.remove('valid');
-                    if (feedback) {
-                        feedback.textContent = 'Field ini wajib diisi';
-                        feedback.className = 'form-feedback invalid show';
-                    }
-                    isValid = false;
-                } else if (input.type === 'email' && !isValidEmail(input.value)) {
-                    input.classList.add('invalid');
-                    input.classList.remove('valid');
-                    if (feedback) {
-                        feedback.textContent = 'Format email tidak valid';
-                        feedback.className = 'form-feedback invalid show';
-                    }
-                    isValid = false;
-                } else if (input.id === 'password_confirmation') {
-                    const password = document.getElementById('password').value;
-                    if (input.value !== password) {
-                        input.classList.add('invalid');
-                        input.classList.remove('valid');
-                        if (feedback) {
-                            feedback.textContent = 'Password tidak cocok';
-                            feedback.className = 'form-feedback invalid show';
-                        }
-                        isValid = false;
-                    } else {
-                        input.classList.remove('invalid');
-                        input.classList.add('valid');
-                        if (feedback) {
-                            feedback.textContent = 'Password cocok';
-                            feedback.className = 'form-feedback valid show';
-                        }
-                    }
-                } else {
-                    input.classList.remove('invalid');
-                    input.classList.add('valid');
-                    if (feedback) {
-                        feedback.className = 'form-feedback';
-                    }
-                }
-            });
-
-            return isValid;
-        }
-
-        function isValidEmail(email) {
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return emailRegex.test(email);
-        }
-
-        // Event listeners
-        document.getElementById('password').addEventListener('input', function() {
-            checkPasswordStrength(this.value);
-        });
-
-        document.getElementById('password_confirmation').addEventListener('input', validateForm);
-
-        const inputs = document.querySelectorAll('.form-control-modern');
-        inputs.forEach(input => {
-            input.addEventListener('blur', validateForm);
-            input.addEventListener('focus', function() {
-                this.style.borderColor = 'var(--primary-black)';
-            });
-        });
-
-        // Form submission
-        document.getElementById('registerForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            if (!validateForm()) {
-                return;
-            }
-
-            const terms = document.getElementById('terms');
-            if (!terms.checked) {
-                alert('Anda harus menyetujui syarat dan ketentuan');
-                return;
-            }
-
-            const registerBtn = document.getElementById('registerBtn');
-            registerBtn.classList.add('loading');
-            registerBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Mendaftar...';
-            
-            // Simulate form submission
-            setTimeout(() => {
-                registerBtn.classList.remove('loading');
-                registerBtn.innerHTML = '<i class="fas fa-user-plus me-2"></i>Daftar Sekarang';
-                alert('Registrasi berhasil! Silakan cek email untuk verifikasi.');
-            }, 3000);
-        });
-    </script>
 </body>
 
 </html>
