@@ -10,7 +10,9 @@ use App\Http\Controllers\PembayaranController;
 use App\Http\Controllers\LamanJasaController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\TambahKategoriController;
+use App\Http\Controllers\BuatTokoController;
 use App\Http\Controllers\BuatJasaController;
+use App\Http\Controllers\TokoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 
@@ -77,6 +79,16 @@ Route::post('/kategori/tambah', [TambahKategoriController::class,"store"])->name
 
 
 Route::get('/categories', [KategoriJasaController::class, "index"]);
+
+
+
+Route::get('/buattoko', [BuatTokoController::class, "index"]);
+
+Route::post('/buattoko', [BuatTokoController::class, "store"])->name("toko.store");
+
+
+
+Route::get('/toko', [TokoController::class, "index"]);
 
 
 

@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tambah Jasa</title>
+    <title>Buat Toko</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <style>
-    .tambah-jasa-container {
+    .tambah-toko-container {
         min-height: 100vh;
         display: flex;
         align-items: center;
@@ -19,7 +19,7 @@
         position: relative;
     }
 
-    .tambah-jasa-card {
+    .tambah-toko-card {
         background: var(--primary-white);
         border-radius: 25px;
         padding: 3rem;
@@ -34,7 +34,7 @@
     }
 
     @media (max-width: 768px) {
-        .tambah-jasa-container {
+        .tambah-toko-container {
             padding: 1rem;
         }
     }
@@ -48,24 +48,24 @@
         <span>Kembali ke Beranda</span>
     </a>
 
-    <div style="margin-top: 100px;" class="tambah-jasa-container">
-        <div class="tambah-jasa-card">
+    <div style="margin-top: 100px;" class="tambah-toko-container">
+        <div class="tambah-toko-card">
             <div class="logo-section">
                 <img src="/images/logo_black.png" alt="SatelitJasa Logo" class="logo-img">
                 <h1 class="welcome-text">Buat Halaman Jasamu</h1>
             </div>
 
 
-            <form action="" method="POST">
+            <form action="{{ route("toko.store") }}" method="POST">
                 @csrf
                 <div class="form-group">
-                    <label for="judul" class="form-label">
+                    <label for="nama" class="form-label">
                         <i class="fas fa-hashtag"></i>
-                        Judul Jasa
+                        Nama Toko
                     </label>
-                    <input type="text" class="form-control-modern" id="judul" name="judul"
-                        placeholder="Masukkan Judul Jasa" value="{{ old("judl") }}">
-                    @error("judul")
+                    <input type="text" class="form-control-modern" id="nama" name="nama"
+                        placeholder="Masukkan Nama Toko" value="{{ old("nama") }}">
+                    @error("nama")
                         <div style="color: red;">
                             <div style="color: red;">
                                 {{$message}}
@@ -89,13 +89,12 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="harga" class="form-label">
-                        <i class="fas fa-credit-card"></i>
-                        Harga Jasa (Rp)
+                    <label for="ktp" class="form-label">
+                        <i class="fas fa-id-card"></i>
+                        Foto KTP
                     </label>
-                    <input type="number" class="form-control-modern" id="harga" name="harga"
-                        placeholder="Masukkan Harga Jasa" value="{{ old("harga") }}">
-                    @error("harga")
+                    <input type="file" class="form-control-modern form-control" id="ktp" name="ktp" value="{{ old("ktp") }}">
+                    @error("ktp")
                         <div style="color: red;">
                             {{$message}}
                         </div>
@@ -104,7 +103,7 @@
 
                 <button type="submit" class="register-btn" id="registerBtn">
                     <i class="fas fa-arrow-right me-2"></i>
-                    Selanjutnya
+                    Daftar Toko
                 </button>
             </form>
         </div>

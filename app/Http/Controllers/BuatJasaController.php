@@ -6,8 +6,7 @@ use Illuminate\Http\Request;
 
 class BuatJasaController extends Controller
 {
-    public function index()
-    {
-        return view('BuatJasa');
+    public function index() {
+        return view('buatjasa');
     }
 }

@@ -41,7 +41,7 @@ class AuthController extends Controller
             } else {
                 return redirect('/auth/login')->withErrors(['password' => 'Kata sandi salah!']);
             }
-        }catch(Exception $e){
+        } catch (Exception $e) {
             dd($e);
         }
     }
